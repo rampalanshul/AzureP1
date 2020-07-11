@@ -11,7 +11,7 @@ import sys
 
 app = Flask(__name__)
 app.config.from_object(Config)
-# TODO: Add any logging levels and handlers with app.logger
+#Add any logging levels and handlers with app.logger
 logHandler = logging.StreamHandler(stream=sys.stdout)
 logHandler.setFormatter(logging.Formatter("[%(asctime)s] %(levelname)s in %(module)s: %(message)s"))
 app.logger.addHandler(logHandler)
